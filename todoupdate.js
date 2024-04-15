@@ -25,5 +25,4 @@ document.body.addEventListener('click', (event) => {
     }
 });
 
-
 getUsers();
