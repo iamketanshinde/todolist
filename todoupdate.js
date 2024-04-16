@@ -8,8 +8,8 @@ async function getUsers() {
             <td>${user.login}</td>
             <td><img src="${user.avatar_url}" alt="Avatar" style="width: 80px; height: 80px; border-radius: 50%;"></td>
             <td>${user.site_admin}</td>
-            <td><button class="btn btn-primary edit-btn">Edit</button></td>
-            <td><button class="btn btn-primary reject-btn">Reject</button></td>
+            <td><button class="btn edit-btn btn-primary">Edit</button></td>
+            <td><button class="btn Rej-btn btn-danger">Reject</button></td>
         </tr>
         
     `).join('');
@@ -20,8 +20,8 @@ document.body.addEventListener('click', (event) => {
     }
 });
 document.body.addEventListener('click', (event) => {
-    if (event.target.classList.contains('reject-btn')) {
-       alert('Application Rejected')
+    if (event.target.classList.contains('rej-btn')) {
+       alert('Application Rejected');
     }
 });
 
