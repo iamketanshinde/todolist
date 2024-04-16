@@ -9,8 +9,18 @@
 <body>
         <div class="container">
                 <h2>UserTable</h2>
+                <form id="form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="status">Status:</label>
+                    <select id="status" name="status">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </form>
             <table class="table">
-                <form id="form"><thead>
+              <thead>
                     <tr> 
                         <td scope="col">Sr.no</td>
                         <td scope="col">User_admin</td>
@@ -19,11 +29,12 @@
                         <td scope="col">Update</td>
                         <td scope="col">Rejected</td>
                     </tr>
-                </thead></form>
+                </thead>
                 <tbody id="usertable">
                 </tbody>
             </table>
         </div>
-    <script src="todoupdate.js"></script>
+    <script src="input3.js"></script>
 </body>
 </html>
+
